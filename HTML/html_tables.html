@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table</title>
+    <style>
+        h4{
+            margin-bottom: 0px;
+        }
+        .header {
+            text-align: center;
+        }
+        table, tr, th, td {
+            border: 1px solid black;
+            padding: 5;
+            border-spacing: 5;
+        }
+        table{
+            width: 65%;
+            margin: 0px 200px;
+        }
+        .header{
+            color:rgb(216, 142, 243);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: large;
+            font-weight: bold;
+        }
+        .header_row{
+            background-color: rgb(216, 142, 243);
+        }
+        .score_row{
+            text-align: center;
+        }
+        .score_row:nth-child(odd){
+            background-color:gainsboro;
+        }
+        .score_row:nth-child(even){
+            background-color:white;
+        }
+        
+    </style>
+</head>
+<body>
+    <h4 class="header">St.Benedict's High School
+        <p>Class: SS2</p>
+        <p>Teacher: Ade</p>
+    </h4>
+    
+    <table>
+        <thead>
+            <tr class="header_row">
+                <th rowspan="2"  id="heading">S/N</th>
+                <th rowspan="2" id="heading">Name</th>
+                <th colspan="5" id="heading">Subjects</th>
+                <th colspan="2" rowspan="2" id="heading">Total Score</th>
+            </tr> 
+            <tr class="header_row">
+                <th class="sub">Mathematics</th>
+                <th class="sub">English</th>
+                <th class="sub">Physics</th>
+                <th class="sub">Chemistry</th>
+                <th class="sub">Biology</th>
+            </tr>           
+        </thead>
+        <tbody>
+            <tr class="score_row">
+                <td>1</td>
+                <td>Adekunle</td>
+                <td class="score">72</td>
+                <td class="score">43</td>
+                <td class="score">78</td>
+                <td class="score">73</td>
+                <td class="score">37</td>
+                <td class="score">303</td>
+            </tr>
+            <tr class="score_row">
+                <td>2</td>
+                <td>John</td>
+                <td class="score">42</td>
+                <td class="score">64</td>
+                <td class="score">70</td>
+                <td class="score">55</td>
+                <td class="score">58</td>
+                <td class="score">289</td>
+            </tr>
+            <tr class="score_row">
+                <td class="score">3</td>
+                <td class="score">Peter</td>
+                <td class="score">62</td>
+                <td class="score">40</td>
+                <td class="score">73</td>
+                <td class="score">75</td>
+                <td class="score">99</td>
+                <td class="score">349</td>
+            </tr>
+            <tr class="score_row">
+                <td class="score">4</td>
+                <td class="score">Rukayat</td>
+                <td class="score">77</td>
+                <td class="score">75</td>
+                <td class="score">78</td>
+                <td class="score">75</td>
+                <td class="score">82</td>
+                <td class="score">387</td>
+            </tr>
+            <tr class="score_row">
+                <td class="score">5</td>
+                <td class="score">Paul</td>
+                <td class="score">72</td>
+                <td class="score">40</td>
+                <td class="score">72</td>
+                <td class="score">70</td>
+                <td class="score">97</td>
+                <td class="score">351</td>
+            </tr>
+            <tr class="score_row">
+                <td class="score">6</td>
+                <td class="score">Victor</td>
+                <td class="score">76</td>
+                <td class="score">64</td>
+                <td class="score">48</td>
+                <td class="score">99</td>
+                <td class="score">37</td>
+                <td class="score">324</td>
+            </tr>
+            <tr class="score_row">
+                <td class="score">7</td>
+                <td class="score">John</td>
+                <td class="score">62</td>
+                <td class="score">54</td>
+                <td class="score">78</td>
+                <td class="score">75</td>
+                <td class="score">64</td>
+                <td class="score">333</td>
+            </tr>
+            <tr class="score_row">
+                <td class="score">8</td>
+                <td class="score">Doe</td>
+                <td class="score">52</td>
+                <td class="score">84</td>
+                <td class="score">48</td>
+                <td class="score">85</td>
+                <td class="score">27</td>
+                <td class="score">296</td>
+            </tr>
+            <tr class="score_row">
+                <td class="score">9</td>
+                <td class="score">Stephen</td>
+                <td class="score">92</td>
+                <td class="score">44</td>
+                <td class="score">78</td>
+                <td class="score">65</td>
+                <td class="score">61</td>
+                <td class="score">340</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
