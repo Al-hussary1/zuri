@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <ul class="navbar text">
+            <li><a href="index.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="register.html">Registration</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </header>
+    <main>
+        <div class="contact_form">
+            <header class="text">Contact Us</header>
+            <form action="#">
+                <div class="contact-details">
+                    <div class="input-details">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" placeholder="Enter your name" required>
+                    </div>
+
+                    <div class="input-details">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                    </div>
+
+                    <div class="input-details">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+                    </div>
+                </div>
+            </form>
+            <div class="buttons">                        
+                <button class="sumbit">
+                    <span class="btnText">Submit</span>
+                    <i class="uil uil-navigator"></i>
+                </button>
+            </div>
+        </div>
+        <footer class="text">
+            &copy;Ridwan Gbadamosi
+        </footer>
+    </main>
+</body>
+</html>
